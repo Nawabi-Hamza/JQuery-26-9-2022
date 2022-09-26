@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:10px
+        }
+        #ball{
+            position: absolute;
+            top:200px;
+            filter: brightness(150);
+            margin-left: -150px;
+   
+
+        }
+       img{
+        margin-top:50px;
+        margin-bottom:-50px;
+       }
+       .classAdd{
+        color:red;
+       }
+       .new{
+        font-size:26px;
+        font-family: cursive;
+       }
+       .sty{
+        border: 8px solid orange;
+        padding: 20px;
+        color:red;
+        box-shadow: 3px 2px 12px blue;
+        border-radius: 10px;
+        margin: 30px;
+       }
+    </style>
+</head>
+<body>
+
+    <!-- <div class="row">
+        
+        <div class="col">
+            <img src="./2.png" id="i1" alt="">
+            <img src="./images.jpg" id="ball" height="50px" alt="">
+
+        </div>
+        <div class="col">
+            <img src="./1.png" id="i2" alt="">
+        </div>
+    </div> -->
+    
+    <hr><br><br><br><br><hr>
+    <button id="ad" class="btn btn-danger">click</button>
+    <button id="re" class="btn btn-warning">remove</button>
+    <button id="cssb" >remove</button>
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic perspiciatis ratione et in est, assumenda natus eos dicta eligendi? Porro voluptate tenetur alias aspeiure, repellat quae obcaecati. Soluta, delectus esse vero accusantium minus</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic perspiciatis ratione et in est, assumenda natus eos dicta eligendi? Porro voluptate tenetur alias asperiores ipsa quidem consequatur, nostrum eaque molestiae recusandae, numquam repellat dicta nesciunt! Facere maxime sapiente assumenda quibusdam iure, repellat quae obcaecati. Soluta, delectus esse vero accusantium minus ut cupiditate autem! Amet aspernatur obcaecati esse consectetur in quos, quod distinctio labore alias. Dolore dignissimos, culpa itaque tempore nostrum in nesciunt ad inventore doloribus dicta temporibus odio fuga molestias eligendi! Doloremque, architecto odit. Deleniti nihil provident adipisci rem officia voluptatibus itaque dolorum omnis in sapiente. Odit quibusdam sapiente asperiores?</p>
+    <p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic perspiciatis ratione et in est, assumenda natus eos dicta eligendi? Porro voluptate tenetur alias asperiores ipsa quidem consequatur, nostrum eaque molestiae recusandae, numquam repellat dicta nesciunt! Facere maxime sapiente assumenda quibusdam iure, repellat quae obcaecati. Soluta, delectus esse vero accusantium minus ut cupiditate autem! Amet aspernatur obcaecati esse consectetur in quos, quod distinctio labore alias. Dolore dignissimos, culpa itaque tempore nostrum in nesciunt ad inventore doloribus dicta temporibus odio fuga molestias eligendi! Doloremque, architecto odit. Deleniti nihil provident adipisci rem officia voluptatibus itaque dolorum omnis in sapiente. Odit quibusdam sapiente asperiores?</p>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic perspiciatis ratione et in est, assumenda natus eos dicta eligendi? Porro voluptate tenetur alias asperiores ipsa quidem consequatur, nostrum eaque molestiae recusandae, numquam repellat dicta nesciunt! Facere maxime sapiente assumenda quibusdam iure, repellat quae obcaecati. Soluta, delectus esse vero accusantium minus ut cupiditate autem! Amet aspernatur obcaecati esse consectetur in quos, quod distinctio labore alias. Dolore dignissimos, culpa itaque tempore nostrum in nesciunt ad inventore doloribus dicta temporibus odio fuga molestias eligendi! Doloremque, architecto odit. Deleniti nihil provident adipisci rem officia voluptatibus itaque dolorum omnis in sapiente. Odit quibusdam sapiente asperiores?</p> -->
+
+    <!-- <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic perspiciatis ratione et in est, assumenda natus eos dicta eligendi? Porro voluptate tenetur alias asperiores ipsa quidem consequatur, nostrum eaque molestiae recusandae, numquam  adipisci rem officia voluptatibus itaque dolorum omnis in sapiente. Odit quibusdam sapiente asperiores?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic perspiciatis ratione et in est, assumenda natus eos dicta eligendi? Porro voluptate tenetur alias asperiores ipsa quidem consequatur, nostrum eaque molestiae recusandae, numquam repellat luptatibus itaque dolorum omnis in sapiente. Odit quibusdam sapiente asperiores?</p>
+        <p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic perspiciatis ratione et in est, assumenda natus eos dicta eligendi? Porro voluptate tenetur alias asperiores ipsa quidem consequatur, nostrum eaque molestiae recusandae, numquam ribus dicta temporibus odio fuga molestias eligendi! Doloremque, architecto odit. Deleniti nihil provident adipisci rem officia voluptatibus itaque dolorum omnis in sapiente. Odit quibusdam sapiente asperiores?</p>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic perspiciatis ratione et in est, assumenda natus eos ati esse consectetur in quos, quod distinctio labore alias. Dolore dignissimos, culpa itaque tempore nostrum in nesciunt ad inventore doloribus dicta temporibus odio fuga molestias eligendi! Doloremque, architecto odit. Deleniti nihil provident adipisci rem officia voluptatibus itaque dolorum omnis in sapiente. Odit quibusdam sapiente asperiores?</p>
+        <small>smallsalkdfl</small><strong>strong asld</strong>
+        <b>bold  sdkl</b>
+    </div> -->
+   
+    <!-- <div>Div- Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, rem!
+        <ul>Ul- Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, quae!
+            <li>Li- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, libero.
+                <span>-Span Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, amet?
+                </span>
+            </li>
+        </ul>
+    </div>
+<h1>This is header</h1> -->
+
+    <!-- <div>(The div box)
+        <ul>(unordered List)
+            <li>(list) <br><br>
+                <span>
+                    (span)
+                </span>
+                <br><br>
+            </li>
+        </ul>
+    </div>-->
+    <div> 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, amet.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, amet.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, amet.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, amet.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, amet.</p>
+    </div>
+
+</body>
+<script src="jQuery.js"></script>
+<script src="js.js"></script>
+</html>
